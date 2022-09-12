@@ -1,0 +1,160 @@
+/*Päänavikaation muokkaus*/
+.navbar a {
+	float: left;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 10px; 
+	text-decoration: none;
+}
+.navbar{
+	position: fixed;
+	height: 120px; 
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgb(00, 00, 80);
+}
+	.navbar ul{
+		float: right;
+		margin-right: 20px;
+	}
+		.navbar ul li{
+			list-style: none;
+			margin: 10px 8px; 
+			display: inline-block;
+			line-height: 80px;
+		}
+			.navbar ul li a{
+				font-size: 20px;
+				font-family: 'Roboto', sans-serif;
+				color: rgb(255, 255, 255);
+				padding: 6px 13px;
+				text-decoration: none;
+				transition: .4s;
+			}
+				.navbar ul li a:hover{
+					background: rgb(201, 110, 13);
+					border-radius: 2px;
+				}
+
+ /*Sivunavikaation muokkaus*/ 
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+   
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  /*Sivunavin muokkaus värit ja sijainti*/
+  #about {
+    top: 120px; /*Nämä muokkaa sivunavin sijaintia, jos muokkaa yhden palkin niin täytyy muokata muitakin*/
+    background-color: #5c5c5c; /*Sivunavin värit*/
+  }
+  
+  #blog {
+    top: 180px;
+    background-color: #000080;
+  }
+  
+  #projects {
+    top: 240px;
+    background-color: #FF8C00;
+  }
+  
+  #contact {
+    top: 300px;
+    background-color: rgb(0, 222, 252);
+  }
+  /*Sivuston muokkaus*/
+  html, body, #page-one, #page-two, #page-three, #page-four {
+      height:auto;
+      min-height: 100vh;
+	  margin: 0px;
+    background-image: url(tausta.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #page-one, #page-two, #page-three, #page-four {padding-top:4em;}
+  h2 {font-size:3em; padding-top:2em; text-align:center; color: #ddd;}
+  
+  p { /*Tekstin muokkaus tässä*/
+	  text-align: left;
+	  text-decoration-style:inherit;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    font-size: 25px;
+    color:#ddd;
+  }
+
+  figcaption{
+		margin-top: 10px;
+		font-size: 20px;
+    margin-inline-start: 650px;
+	}
+/* linkin tekstin värin määritys*/
+a {
+	color: orange;;
+}
+  
+  img { /*Kuvan muokkaus tässä*/
+	border: 1px solid #ddd;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+	width: 300px;
+  }
+
+  /*Laskin*/
+  .calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+  display: grid;
+
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.calculator span {
+  display: grid;
+  width: 62px;
+  height: 60px;
+  color: #fff;
+  background: #0c2835;
+  place-items: center;
+  border: 1px solid rgba (0,0,0,.1);
+}
+.calculator span:active{
+  background: #FF8C00;
+  color: #111;
+}
+.calculator span.clear {
+  grid-column: span 2;
+  width: 124px;
+  background: #000080;
+}
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px
+}
+.calculator span.equal{
+  background: #FF8C00;
+}

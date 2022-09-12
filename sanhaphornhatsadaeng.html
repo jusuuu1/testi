@@ -1,0 +1,99 @@
+<!--Kerrotaan selainta tiedoston olevan HTML koodia-->
+<!DOCTYPE html>
+<html lang="fi">
+<!--Kaikki HTML-elmentit html elementin sisään-->
+<head>
+	<!--Tiedot sivusta-->
+	<meta charset="UTF-8">
+	<title>Boo</title>
+	<!--Linkitetty css-->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!--Sivulla näkyvät elementit-->
+	<header>
+		<div>
+			<!-- Navigointi baari, joka avaa uuden sivun samalle välilehdelle-->
+			<nav class="navbar">
+				<ul>
+					<li><a href="info.html">Info</a></li>
+					<li><a href="juusoporhala.html">Juuso Pörhälä</a></li>
+					<li><a href="juhamustonen.html">Juha Mustonen</a></li>
+                    <li><a href="sanhaphornhatsadaeng.html">Sanhaphorn Hatsadaeng</a></li>
+					<li><a href="jonihautala.html">Joni Hautala</a></li>
+					<li><a href="mikaelkytola.html">Mikael Kytölä</a></li>
+                    <li><a href="aatuinkilainen.html">Aatu Inkiläinen</a></li>
+				</ul>
+			</nav>
+			<!-- Sivu navigointi-->
+			<div id="mySidenav" class="sidenav">
+				<a href="#page-one" id="about">About</a>
+				<a href="#page-two" id="blog">Blog</a>
+				<a href="#page-three" id="projects">Projects</a>
+				<a href="#page-four" id="contact">Contact</a>
+		  </div>		
+		</div>	
+		</header>
+	<main>
+		<div>		<div id="page-one">
+			<h2>Tietoa</h2>
+				<!--Kuvia, joiden ohessa linkitetty kuvateksti-->
+				<figure>
+					<img src="Profiilikuva.jpg" alt="kuva">
+			</figure>
+			<!--Sivun teksti-->
+			<p> Tervetuloa minun oppimisportfoliosivulleni! <br>
+				Hieman itsestäni sen verran, että olen kolmannen vuoden digitaalisen tradenomin opiskelija. Valmistumiseni suunniteltu ajankohta on 2022 loppuun mennessä. Tavoitteenani tämän opintojen loputtua päätyä ohjelmointialalle ja olla itsekin yksi ”velhoista”. Tämä oppimisportfolio on blogityylinen ja sivua toisen kurssin aiheita.  </p>
+		</div>
+	</div> <hr>
+	<div id="page-two">
+		<h2>Opinnot</h2>
+		<p>Olemme oppineet tähän mennessä verkkosivujen suunnittelua ja rakentamista. Keväällä 2021 aloitimme erilaisiin perus ohjelmointityökaluihin ja sivustojen rakentamistyökaluihin tutustumiseen. Itse tykkäsin wix-työkaluun, jolla voidaan osaamisesta riippumatta rakentaa hyvin nopeasti toimiva helppokäyttöinen sivusto. Työkalu on tosin maksullinen, jos kaikkia ominaisuuksia haluaa ottaa käyttöön.</p>
+    <br>
+    <p>En tiedä muista, mutta itselläni on ainakin ollut kurssin aikana ja varsinkin alussa vaikeaa sisäistää kaikki nopealla aikataululla. Olemme käyneet Web-ohjelmointiprojekti-kurssin ohella myös siihen vaadittu osaamiskurssi Ohjelmistotuotannon ja ohjelmoinnin perusteet. 
+		Olen kokenut tämän syksyn tuntuvan hyvin sekavalta ja vaikea on ollut pysyä perässä. Kovasti olen yrittänyt sisäistää kaiken ja näin loppua myöden koen suurimmanosan käydyistä asioista jääneen kovaan koppaani. 
+	</p>
+	<br>
+    <p>Kaikista vaikeimpia olivat mielestäni javacriptin if else ja loop, sillä molemmissa menetelmissä vaaditaan tarkkuutta eikä sekään välttämättä ole tarpeeksi saadakseen koodi oikein ja toimiviksi. Tietenkin koodaamisen puolella ei kykene kaikkia heti saamaankaan oikein ja kaiken oppii ja kokemusta karttuu.  </p> 
+	</p>
+        </div>
+		<hr>
+		<div id="page-three">
+		<h2>Laskin</h2>
+		<p>Vaikka kurssilla olemme käyttäneet harjoituksissa paljon javascriptiä, tässä esimerkissäni javascriptiä esiintyy vain hieman html tiedostossa. Alla on koodattu html, css ja hieman javacriptiä käyttäen yksinkertainen laskin. </p>
+
+		<form class="calculator" name="calc">
+            <input class="value" type="text" name="txt" readonly="">
+            <span class="num clear" onClick="document.calc.txt.value =''">c</span>
+            <span class="num" onClick="document.calc.txt.value +='/'">/</span>
+            <span class="num" onClick="document.calc.txt.value +='*'">*</span>
+            <span class="num" onClick="document.calc.txt.value +='7'">7</span>
+            <span class="num" onClick="document.calc.txt.value +='8'">8</span>
+            <span class="num" onClick="document.calc.txt.value +='9'">9</span>
+            <span class="num" onClick="document.calc.txt.value +='-'">-</span>
+            <span class="num" onClick="document.calc.txt.value +='4'">4</span>
+            <span class="num" onClick="document.calc.txt.value +='5'">5</span>
+            <span class="num" onClick="document.calc.txt.value +='6'">6</span>
+            <span class="num plus" onClick="document.calc.txt.value +='+'">+</span>
+            <span class="num" onClick="document.calc.txt.value +='3'">3</span>
+            <span class="num" onClick="document.calc.txt.value +='2'">2</span>
+            <span class="num" onClick="document.calc.txt.value +='0'">0</span>
+            <span class="num" onClick="document.calc.txt.value +='00'">00</span>
+            <span class="num" onClick="document.calc.txt.value +='.'">.</span>
+            <span class="num equal" onClick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+          </form>
+		</div>
+		<hr>
+		<div id="page-four">
+		<h2>Uusi sivu</h2>
+		</div> 
+			<!-- Sivu navigointi-->
+			<div id="mySidenav" class="sidenav">
+				<a href="#page-one" id="about">Sivu 1</a>
+				<a href="#page-two" id="blog">Sivu 2</a>
+				<a href="#page-three" id="projects">Sivu 3</a>
+				<a href="#page-four" id="contact">Sivu 4</a>
+		  </div>
+	</main>
+</body>
+</html>
